@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="pname">Project name</label>
+        <input type="text"  name="pname"><br>
+        <label for="desc">Description</label><br>
+        <textarea rows="4" cols="40" name="desc"></textarea><br>
+        <label for="start_date">Start Date</label>
+        <input type="datetime-local"  name="start_date"><br>
+        <label for="end_date">End Date</label>
+        <input type="datetime-local"  name="end_date"><br>
+        <input type="submit" name="create">
+      </form>
+</body>
+</html>

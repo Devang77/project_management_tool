@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label for="title">title</label>
+        <input type="text" id="title" name="title"><br>
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status"><br>
+        <label for="dead_line">Deadline Date</label>
+        <input type="datetime-local" id="dead_line" name="dead_line"><br>
+        <input type="submit" id="create" name="create">
+      </form>
+</body>
+</html>
